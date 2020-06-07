@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public sealed class MusicPlayer : MonoBehaviour
 {
@@ -24,19 +23,7 @@ public sealed class MusicPlayer : MonoBehaviour
 
     private void Start()
     {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-
         AudioSource audioSource;
         audioSource = GetComponent<AudioSource>();
-
-        if (currentSceneIndex == 0)
-        {
-            Invoke("LoadNextScene", 3);
-        }
-    }
-
-    private void LoadNextScene()
-    {
-        SceneManager.LoadScene(1);
     }
 }

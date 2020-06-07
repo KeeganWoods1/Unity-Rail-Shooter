@@ -4,30 +4,38 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-public class Player : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
+    [Header("General")]
     [Tooltip ("In ms^-1")][SerializeField] float speed = 4f;
     [Tooltip("In m")] [SerializeField] float xScreenEdge; //from center
     [Tooltip("In m")] [SerializeField] float yScreenEdge; //from center
 
-    [SerializeField] float positionPitchFactor = -2f; //when ship reaches y limit the pitch value is about double the y value
+    [Header("Screen-position Based")]
     [SerializeField] float controlPitchFactor = -20f;
-    [SerializeField] float controlRollFactor = -20f;
     [SerializeField] float positionYawFactor = 2f;
+
+    [Header("Control-throw Based")]
+    [SerializeField] float positionPitchFactor = -2f; //Observed in editor: when ship reaches y limit the pitch value is about double the y value
+    [SerializeField] float controlRollFactor = -20f;
 
     float xThrow, yThrow;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    bool allowMovement = true;
 
     // Update is called once per frame
     void Update()
     {
-        ProcessTranslation();
-        ProcessRotation();
+        if (allowMovement)
+        {
+            ProcessTranslation();
+            ProcessRotation();
+        }
+    }
+
+    void DisableMovement() //Beware: called by string reference
+    {
+        allowMovement = false;
     }
 
     private void ProcessTranslation()
