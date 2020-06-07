@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float positionPitchFactor = -2f; //Observed in editor: when ship reaches y limit the pitch value is about double the y value
     [SerializeField] float controlRollFactor = -20f;
 
+    [SerializeField] GameObject[] lasers;
+
     float xThrow, yThrow;
 
     bool allowMovement = true;
@@ -30,6 +32,7 @@ public class PlayerController : MonoBehaviour
         {
             ProcessTranslation();
             ProcessRotation();
+            ProcessFiring();
         }
     }
 
@@ -69,4 +72,35 @@ public class PlayerController : MonoBehaviour
 
         transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
     }
+
+
+    private void ProcessFiring()
+    {
+        if (CrossPlatformInputManager.GetButton("Fire"))
+        {
+            ActivateLasers();
+        }
+
+        else
+        {
+            DeactivateLasers();
+        }
+    }
+
+    private void ActivateLasers()
+    {
+        foreach (GameObject lazer in lasers)
+        {
+            lazer.SetActive(true);
+        }
+    }
+
+    private void DeactivateLasers()
+    {
+        foreach (GameObject lazer in lasers)
+        {
+            lazer.SetActive(false);
+        }
+    }
+
 }
