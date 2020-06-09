@@ -2002,7 +2002,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -640.3, y: 438.9}
+  m_AnchoredPosition: {x: -483, y: 348}
   m_SizeDelta: {x: -1385, y: -1010.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &447713081
@@ -2027,10 +2027,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 76b3c36b5770de842a954da0db82b3ae, type: 3}
-    m_FontSize: 55
+    m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
+    m_BestFit: 1
+    m_MinSize: 4
     m_MaxSize: 133
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -2759,7 +2759,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
+  m_ScaleFactor: 0.5
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
@@ -4332,7 +4332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5754717, g: 0.10586509, b: 0.1105588, a: 1}
+  m_Color: {r: 0.5764706, g: 0.11549216, b: 0.10588234, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4377,7 +4377,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 69.79999}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -1060.2, y: -881.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1036930959
@@ -4462,10 +4462,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 50
       objectReference: {fileID: 0}
-    - target: {fileID: 1754910300963384, guid: 32b74f40c33f3a5468b4b392dbc31b6a, type: 3}
-      propertyPath: parent
-      value: 
-      objectReference: {fileID: 899607575}
     - target: {fileID: 1425392113892112569, guid: 32b74f40c33f3a5468b4b392dbc31b6a,
         type: 3}
       propertyPath: autoRandomSeed
@@ -4476,6 +4472,10 @@ PrefabInstance:
       propertyPath: randomSeed
       value: 7424
       objectReference: {fileID: 0}
+    - target: {fileID: 1754910300963384, guid: 32b74f40c33f3a5468b4b392dbc31b6a, type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 899607575}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32b74f40c33f3a5468b4b392dbc31b6a, type: 3}
 --- !u!1 &1056875874 stripped
@@ -5600,10 +5600,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 50
       objectReference: {fileID: 0}
-    - target: {fileID: 1754910300963384, guid: 32b74f40c33f3a5468b4b392dbc31b6a, type: 3}
-      propertyPath: parent
-      value: 
-      objectReference: {fileID: 899607575}
     - target: {fileID: 1425392113892112569, guid: 32b74f40c33f3a5468b4b392dbc31b6a,
         type: 3}
       propertyPath: autoRandomSeed
@@ -5614,6 +5610,10 @@ PrefabInstance:
       propertyPath: randomSeed
       value: 7424
       objectReference: {fileID: 0}
+    - target: {fileID: 1754910300963384, guid: 32b74f40c33f3a5468b4b392dbc31b6a, type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 899607575}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32b74f40c33f3a5468b4b392dbc31b6a, type: 3}
 --- !u!1001 &1347581880
@@ -6046,10 +6046,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 50
       objectReference: {fileID: 0}
-    - target: {fileID: 1754910300963384, guid: 32b74f40c33f3a5468b4b392dbc31b6a, type: 3}
-      propertyPath: parent
-      value: 
-      objectReference: {fileID: 899607575}
     - target: {fileID: 1425392113892112569, guid: 32b74f40c33f3a5468b4b392dbc31b6a,
         type: 3}
       propertyPath: autoRandomSeed
@@ -6060,6 +6056,10 @@ PrefabInstance:
       propertyPath: randomSeed
       value: 7424
       objectReference: {fileID: 0}
+    - target: {fileID: 1754910300963384, guid: 32b74f40c33f3a5468b4b392dbc31b6a, type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 899607575}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32b74f40c33f3a5468b4b392dbc31b6a, type: 3}
 --- !u!1001 &1449234866
@@ -7825,15 +7825,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 50.000027
       objectReference: {fileID: 0}
-    - target: {fileID: 1754910300963384, guid: 32b74f40c33f3a5468b4b392dbc31b6a, type: 3}
-      propertyPath: deathFX
-      value: 
-      objectReference: {fileID: 2828938212261959521, guid: 1735ffd805940fd429099ea42ee74588,
-        type: 3}
-    - target: {fileID: 1754910300963384, guid: 32b74f40c33f3a5468b4b392dbc31b6a, type: 3}
-      propertyPath: parent
-      value: 
-      objectReference: {fileID: 899607575}
     - target: {fileID: 1425392113892112569, guid: 32b74f40c33f3a5468b4b392dbc31b6a,
         type: 3}
       propertyPath: autoRandomSeed
@@ -7844,6 +7835,15 @@ PrefabInstance:
       propertyPath: randomSeed
       value: 3461
       objectReference: {fileID: 0}
+    - target: {fileID: 1754910300963384, guid: 32b74f40c33f3a5468b4b392dbc31b6a, type: 3}
+      propertyPath: deathFX
+      value: 
+      objectReference: {fileID: 2828938212261959521, guid: 1735ffd805940fd429099ea42ee74588,
+        type: 3}
+    - target: {fileID: 1754910300963384, guid: 32b74f40c33f3a5468b4b392dbc31b6a, type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 899607575}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32b74f40c33f3a5468b4b392dbc31b6a, type: 3}
 --- !u!4 &2020409082 stripped
@@ -8535,15 +8535,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 50
       objectReference: {fileID: 0}
-    - target: {fileID: 1754910300963384, guid: 32b74f40c33f3a5468b4b392dbc31b6a, type: 3}
-      propertyPath: deathFX
-      value: 
-      objectReference: {fileID: 2828938212261959521, guid: 1735ffd805940fd429099ea42ee74588,
-        type: 3}
-    - target: {fileID: 1754910300963384, guid: 32b74f40c33f3a5468b4b392dbc31b6a, type: 3}
-      propertyPath: parent
-      value: 
-      objectReference: {fileID: 899607575}
     - target: {fileID: 1425392113892112569, guid: 32b74f40c33f3a5468b4b392dbc31b6a,
         type: 3}
       propertyPath: autoRandomSeed
@@ -8554,6 +8545,15 @@ PrefabInstance:
       propertyPath: randomSeed
       value: 6213
       objectReference: {fileID: 0}
+    - target: {fileID: 1754910300963384, guid: 32b74f40c33f3a5468b4b392dbc31b6a, type: 3}
+      propertyPath: deathFX
+      value: 
+      objectReference: {fileID: 2828938212261959521, guid: 1735ffd805940fd429099ea42ee74588,
+        type: 3}
+    - target: {fileID: 1754910300963384, guid: 32b74f40c33f3a5468b4b392dbc31b6a, type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 899607575}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32b74f40c33f3a5468b4b392dbc31b6a, type: 3}
 --- !u!1001 &3609483055441591128

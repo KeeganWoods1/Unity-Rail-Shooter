@@ -38,7 +38,6 @@ public class SceneLoader : MonoBehaviour
     {
         if (isGameScene)
         {
-            print("Checking for load splash");
             CheckReloadSplash();
         }
 
